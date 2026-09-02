@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>TarotLuz</title>
+
+  <meta
+    name="description"
+    content="TarotLuz — luz, intuição e reflexão."
+  >
+
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+
+  <!-- =========================
+       HEADER
+  ========================== -->
+  <header class="site-header">
+    <div class="container header-content">
+
+      <a href="#inicio" class="logo">
+        <span class="logo-symbol">✦</span>
+        <span>TarotLuz</span>
+      </a>
+
+      <button
+        class="menu-toggle"
+        id="menuToggle"
+        type="button"
+        aria-label="Abrir menu"
+        aria-expanded="false"
+      >
+        ☰
+      </button>
+
+      <nav class="main-nav" id="mainNav">
+        <a href="#inicio">Início</a>
+        <a href="#tarot">Tarot</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contato">Contato</a>
+      </nav>
+
+    </div>
+  </header>
+
+
+  <main>
+
+    <!-- =========================
+         HERO
+    ========================== -->
+    <section class="hero" id="inicio">
+
+      <div class="container hero-grid">
+
+        <div class="hero-content">
+
+          <p class="eyebrow">
+            LUZ • INTUIÇÃO • REFLEXÃO
+          </p>
+
+          <h1>
+            Tarot<span>Luz</span>
+          </h1>
+
+          <p class="hero-text">
+            Um espaço para olhar para dentro,
+            encontrar novas perspectivas e
+            transformar perguntas em caminhos.
+          </p>
+
+          <div class="hero-buttons">
+
+            <a href="#tarot" class="btn btn-primary">
+              Começar uma leitura
+            </a>
+
+            <a href="#sobre" class="btn btn-secondary">
+              Conhecer o TarotLuz
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <!-- Carta visual -->
+        <div class="hero-card-area">
+
+          <div class="tarot-card">
+
+            <div class="card-corner top-left">
+              ✦
+            </div>
+
+            <div class="card-corner top-right">
+              ☾
+            </div>
+
+            <div class="card-inner">
+
+              <div class="moon">
+                ☾
+              </div>
+
+              <div class="card-star">
+                ✦
+              </div>
+
+              <div class="card-title">
+                LUZ
+              </div>
+
+              <div class="card-subtitle">
+                INTUIÇÃO
+              </div>
+
+            </div>
+
+            <div class="card-corner bottom-left">
+              ☾
+            </div>
+
+            <div class="card-corner bottom-right">
+              ✦
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         APRESENTAÇÃO
+    ========================== -->
+    <section class="intro-section">
+
+      <div class="container narrow">
+
+        <p class="eyebrow">
+          BEM-VINDO
+        </p>
+
+        <h2>
+          Um lugar para você.
+        </h2>
+
+        <p>
+          Seja bem-vindo ao TarotLuz.
+          Um espaço criado para acolher,
+          refletir e compartilhar caminhos
+          através dos símbolos e da intuição.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         TAROT
+    ========================== -->
+    <section class="section tarot-section" id="tarot">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <p class="eyebrow">
+            TAROT
+          </p>
+
+          <h2>
+            Escolha uma carta
+          </h2>
+
+          <p>
+            Respire, pense na sua pergunta
+            e escolha uma das três cartas.
+          </p>
+
+        </div>
+
+
+        <div class="cards-grid">
+
+          <!-- Carta 1 -->
+          <button
+            class="choice-card"
+            type="button"
+            data-card="1"
+          >
+
+            <span class="choice-number">
+              I
+            </span>
+
+            <span class="choice-symbol">
+              ✦
+            </span>
+
+            <span class="choice-word">
+              CARTA
+            </span>
+
+          </button>
+
+
+          <!-- Carta 2 -->
+          <button
+            class="choice-card"
+            type="button"
+            data-card="2"
+          >
+
+            <span class="choice-number">
+              II
+            </span>
+
+            <span class="choice-symbol">
+              ☾
+            </span>
+
+            <span class="choice-word">
+              CARTA
+            </span>
+
+          </button>
+
+
+          <!-- Carta 3 -->
+          <button
+            class="choice-card"
+            type="button"
+            data-card="3"
+          >
+
+            <span class="choice-number">
+              III
+            </span>
+
+            <span class="choice-symbol">
+              ☀
+            </span>
+
+            <span class="choice-word">
+              CARTA
+            </span>
+
+          </button>
+
+        </div>
+
+
+        <!-- Resultado -->
+        <div
+          class="reading-result"
+          id="readingResult"
+          aria-live="polite"
+          hidden
+        >
+
+          <p class="result-label">
+            SUA CARTA
+          </p>
+
+          <h3 id="resultTitle">
+            A Estrela
+          </h3>
+
+          <p id="resultText">
+            Uma mensagem de esperança,
+            inspiração e confiança no caminho.
+          </p>
+
+          <button
+            class="btn btn-secondary"
+            id="againButton"
+            type="button"
+          >
+            Escolher novamente
+          </button>
+
+        </div>
+
+
+        <p class="tarot-note">
+          As cartas são apresentadas aqui como
+          ferramentas de reflexão e autoconhecimento,
+          sem promessa de previsão objetiva do futuro.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         MINHA HISTÓRIA
+    ========================== -->
+    <section class="section story-section" id="sobre">
+
+      <div class="container story-grid">
+
+        <div class="photo-placeholder">
+
+          <div class="placeholder-symbol">
+            ✦
+          </div>
+
+          <p>
+            FOTO PRINCIPAL<br>
+            DO TAROTLUZ
+          </p>
+
+          <small>
+            Substituir este espaço pela fotografia real.
+          </small>
+
+        </div>
+
+
+        <div class="story-content">
+
+          <p class="eyebrow">
+            MINHA HISTÓRIA
+          </p>
+
+          <h2>
+            Um caminho feito de luz e reflexão.
+          </h2>
+
+          <!--
+            INSERIR AQUI A HISTÓRIA REAL
+            DA PROFISSIONAL.
+
+            Não remover este comentário até
+            inserir o texto definitivo.
+          -->
+
+          <p>
+            Este espaço está reservado para a
+            história do TarotLuz e para a apresentação
+            da profissional.
+          </p>
+
+          <p>
+            O texto definitivo será acrescentado
+            posteriormente.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         SOBRE
+    ========================== -->
+    <section class="section about-section">
+
+      <div class="container narrow">
+
+        <p class="eyebrow">
+          SOBRE O TAROTLUZ
+        </p>
+
+        <h2>
+          Conhecimento, símbolo e reflexão.
+        </h2>
+
+        <p>
+          Uma experiência simples e acolhedora.
+          As cartas podem ser usadas como instrumentos
+          de reflexão e autoconhecimento, sem prometer
+          certezas sobre o futuro.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         CONSULTAS
+    ========================== -->
+    <section class="section consultations-section">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <p class="eyebrow">
+            CONSULTAS
+          </p>
+
+          <h2>
+            Encontre o tema da sua reflexão.
+          </h2>
+
+        </div>
+
+
+        <div class="services-grid">
+
+          <article class="service-card">
+            <span>♡</span>
+            <h3>Amor</h3>
+            <p>
+              Espaço para refletir sobre
+              sentimentos e relacionamentos.
+            </p>
+          </article>
+
+
+          <article class="service-card">
+            <span>✦</span>
+            <h3>Prosperidade</h3>
+            <p>
+              Reflexões sobre objetivos,
+              escolhas e possibilidades.
+            </p>
+          </article>
+
+
+          <article class="service-card">
+            <span>☾</span>
+            <h3>Caminhos</h3>
+            <p>
+              Um momento para observar
+              diferentes possibilidades.
+            </p>
+          </article>
+
+
+          <article class="service-card">
+            <span>◈</span>
+            <h3>Vida pessoal</h3>
+            <p>
+              Um espaço de pausa,
+              reflexão e autoconhecimento.
+            </p>
+          </article>
+
+
+          <article class="service-card">
+            <span>✧</span>
+            <h3>Orientação</h3>
+            <p>
+              Observe sua pergunta por
+              uma nova perspectiva.
+            </p>
+          </article>
+
+
+          <article class="service-card">
+            <span>☀</span>
+            <h3>Leitura geral</h3>
+            <p>
+              Uma reflexão ampla sobre
+              o momento presente.
+            </p>
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         ESPAÇO PARA VOCÊ
+    ========================== -->
+    <section class="section personal-section">
+
+      <div class="container personal-box">
+
+        <div>
+
+          <p class="eyebrow">
+            TAROTLUZ
+          </p>
+
+          <h2>
+            Um espaço para você.
+          </h2>
+
+          <p>
+            Desacelerar também é uma forma de
+            escutar aquilo que existe dentro de você.
+            Permita-se respirar, observar e refletir.
+          </p>
+
+        </div>
+
+        <div class="personal-symbol">
+          ☾ ✦ ☀
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         GALERIA
+    ========================== -->
+    <section class="section gallery-section">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <p class="eyebrow">
+            GALERIA
+          </p>
+
+          <h2>
+            Imagens do TarotLuz
+          </h2>
+
+          <p>
+            Este espaço será preenchido com
+            as fotografias reais do TarotLuz.
+          </p>
+
+        </div>
+
+
+        <!--
+          FOTOS REAIS DEVEM SER COLOCADAS EM:
+
+          assets/images/
+          assets/images/galeria/
+
+          Substituir os placeholders abaixo
+          pelas fotografias reais.
+        -->
+
+        <div class="gallery-grid">
+
+          <div class="gallery-placeholder">
+            <span>✦</span>
+            <p>FOTO 01</p>
+          </div>
+
+          <div class="gallery-placeholder">
+            <span>☾</span>
+            <p>FOTO 02</p>
+          </div>
+
+          <div class="gallery-placeholder">
+            <span>☀</span>
+            <p>FOTO 03</p>
+          </div>
+
+          <div class="gallery-placeholder">
+            <span>✧</span>
+            <p>FOTO 04</p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         CONTATO
+    ========================== -->
+    <section class="section contact-section" id="contato">
+
+      <div class="container narrow">
+
+        <p class="eyebrow">
+          CONTATO
+        </p>
+
+        <h2>
+          Fale com o TarotLuz.
+        </h2>
+
+        <p>
+          Entre em contato para conhecer melhor
+          o trabalho e tirar suas dúvidas.
+        </p>
+
+
+        <div class="contact-list">
+
+          <!-- SUBSTITUIR PELO WHATSAPP REAL -->
+          <a href="#" class="contact-item">
+            <span>☏</span>
+            <span>
+              <strong>WhatsApp</strong>
+              <small>Adicionar contato</small>
+            </span>
+          </a>
+
+
+          <!-- SUBSTITUIR PELO INSTAGRAM REAL -->
+          <a href="#" class="contact-item">
+            <span>◎</span>
+            <span>
+              <strong>Instagram</strong>
+              <small>Adicionar perfil</small>
+            </span>
+          </a>
+
+
+          <!-- SUBSTITUIR PELO E-MAIL REAL -->
+          <a href="#" class="contact-item">
+            <span>✉</span>
+            <span>
+              <strong>E-mail</strong>
+              <small>Adicionar e-mail</small>
+            </span>
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- =========================
+       FOOTER
+  ========================== -->
+  <footer class="site-footer">
+
+    <div class="container footer-content">
+
+      <p>
+        © <span id="currentYear"></span> TarotLuz
+      </p>
+
+      <p>
+        Feito com luz, símbolo e simplicidade.
+      </p>
+
+    </div>
+
+  </footer>
+
+
+  <script src="js/main.js"></script>
+
+</body>
+</html>
