@@ -1,488 +1,177 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>TarotLuz</title>
-
-    <meta name="description" content="TarotLuz — um espaço de amor, prosperidade, saúde, equilíbrio e boas energias.">
-
-    <link rel="stylesheet" href="styles/main.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tarot Luz — Leituras e Magias</title>
+  <meta name="description" content="Tarot Luz — Leituras de tarot, rituais e magias personalizadas. Conexão, clareza e transformação." />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
-
 <body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="./">
+        <img src="assets/logo.svg" alt="Tarot Luz" />
+        <span>Tarot Luz</span>
+      </a>
+      <nav class="nav">
+        <a href="#home">Home</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#leituras">Leituras</a>
+        <a href="#magias">Magias</a>
+        <a href="blog.html">Blog</a>
+        <a href="shop.html">Loja</a>
+        <a href="#agendar">Agendar</a>
+        <a href="#contato">Contato</a>
+      </nav>
+      <a class="cta" href="tel:+5581997071859">+55 81 99707‑1859</a>
+    </div>
+  </header>
 
-    <!-- =========================
-         HEADER
-    ========================== -->
-
-    <header class="site-header">
-
-        <div class="container header-inner">
-
-            <a href="#inicio" class="logo">
-                Tarot<span>Luz</span>
-            </a>
-
-            <button
-                class="menu-toggle"
-                id="menuToggle"
-                aria-label="Abrir menu"
-                aria-expanded="false"
-            >
-                ☰
-            </button>
-
-            <nav class="main-nav" id="mainNav">
-
-                <a href="#inicio">Início</a>
-                <a href="#tarot">Tarot</a>
-                <a href="#sobre">Sobre</a>
-                <a href="#galeria">Galeria</a>
-                <a href="#contato">Contato</a>
-
-            </nav>
-
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>Tarot Luz</h1>
+          <p class="lead">Descubra orientações profundas com leituras de tarot e rituais personalizados. Conexão, clareza e transformação.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#agendar">Agende sua leitura</a>
+            <a class="btn btn-outline" href="shop.html">Visitar Loja</a>
+          </div>
+          <p class="meta">Siga-nos: <a href="https://instagram.com/Tarotluzoficial" target="_blank">@Tarotluzoficial</a></p>
         </div>
-
-    </header>
-
-
-    <main>
-
-        <!-- =========================
-             HERO
-        ========================== -->
-
-        <section class="hero" id="inicio">
-
-            <div class="hero-overlay"></div>
-
-            <div class="container hero-content">
-
-                <p class="eyebrow">
-                    ✦ LUZ • INTUIÇÃO • REFLEXÃO ✦
-                </p>
-
-                <h1>
-                    Tarot<span>Luz</span>
-                </h1>
-
-                <p class="hero-text">
-                    Seja bem-vindo ao TarotLuz.
-                    Um espaço criado para acolher, orientar
-                    e compartilhar caminhos de reflexão,
-                    intuição e boas energias.
-                </p>
-
-                <div class="hero-buttons">
-
-                    <a href="#tarot" class="button button-primary">
-                        Conheça o Tarot
-                    </a>
-
-                    <a href="#sobre" class="button button-secondary">
-                        Minha história
-                    </a>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =========================
-             INTRODUÇÃO
-        ========================== -->
-
-        <section class="intro section">
-
-            <div class="container narrow">
-
-                <p class="section-kicker">
-                    ✦ UM ESPAÇO PARA VOCÊ ✦
-                </p>
-
-                <h2>
-                    Aqui é o seu lugar.
-                </h2>
-
-                <p>
-                    Um lugar para desacelerar, olhar para dentro
-                    e encontrar novas perspectivas.
-                </p>
-
-                <p>
-                    Amor, prosperidade, saúde, equilíbrio
-                    e boas energias fazem parte dessa caminhada.
-                </p>
-
-            </div>
-
-        </section>
-
-
-        <!-- =========================
-             TAROT
-        ========================== -->
-
-        <section class="tarot section" id="tarot">
-
-            <div class="container">
-
-                <div class="section-heading">
-
-                    <p class="section-kicker">
-                        ✦ CARTAS ✦
-                    </p>
-
-                    <h2>
-                        Uma mensagem para reflexão
-                    </h2>
-
-                    <p>
-                        Escolha uma carta e permita-se refletir
-                        sobre a mensagem que ela traz.
-                    </p>
-
-                </div>
-
-
-                <div class="tarot-grid">
-
-
-                    <!-- CARTA 1 -->
-
-                    <article
-                        class="tarot-card"
-                        data-card="star"
-                    >
-
-                        <div class="card-symbol">
-                            ☆
-                        </div>
-
-                        <span class="card-number">
-                            I
-                        </span>
-
-                        <h3>
-                            A Estrela
-                        </h3>
-
-                        <p>
-                            Esperança, inspiração e renovação.
-                        </p>
-
-                        <button class="card-button">
-                            Revelar mensagem
-                        </button>
-
-                    </article>
-
-
-                    <!-- CARTA 2 -->
-
-                    <article
-                        class="tarot-card"
-                        data-card="moon"
-                    >
-
-                        <div class="card-symbol">
-                            ☾
-                        </div>
-
-                        <span class="card-number">
-                            II
-                        </span>
-
-                        <h3>
-                            A Lua
-                        </h3>
-
-                        <p>
-                            Intuição, sentimentos e caminhos interiores.
-                        </p>
-
-                        <button class="card-button">
-                            Revelar mensagem
-                        </button>
-
-                    </article>
-
-
-                    <!-- CARTA 3 -->
-
-                    <article
-                        class="tarot-card"
-                        data-card="sun"
-                    >
-
-                        <div class="card-symbol">
-                            ☼
-                        </div>
-
-                        <span class="card-number">
-                            III
-                        </span>
-
-                        <h3>
-                            O Sol
-                        </h3>
-
-                        <p>
-                            Clareza, vitalidade e novos começos.
-                        </p>
-
-                        <button class="card-button">
-                            Revelar mensagem
-                        </button>
-
-                    </article>
-
-                </div>
-
-
-                <!-- RESULTADO -->
-
-                <div
-                    class="reading"
-                    id="reading"
-                    aria-live="polite"
-                >
-
-                    <div class="reading-inner">
-
-                        <span class="reading-label">
-                            ✦ SUA REFLEXÃO ✦
-                        </span>
-
-                        <h3 id="readingTitle">
-                            Escolha uma carta
-                        </h3>
-
-                        <p id="readingText">
-                            A mensagem aparecerá aqui.
-                        </p>
-
-                        <button
-                            class="button button-secondary"
-                            id="newReading"
-                            type="button"
-                        >
-                            Escolher novamente
-                        </button>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =========================
-             SOBRE
-        ========================== -->
-
-        <section class="about section" id="sobre">
-
-            <div class="container about-grid">
-
-                <div class="about-image">
-
-                    <div class="image-placeholder">
-
-                        <span>✦</span>
-
-                        <p>
-                            Sua foto aqui
-                        </p>
-
-                    </div>
-
-                </div>
-
-
-                <div class="about-content">
-
-                    <p class="section-kicker">
-                        ✦ SOBRE MIM ✦
-                    </p>
-
-                    <h2>
-                        Um pouco da minha história
-                    </h2>
-
-                    <p>
-                        Seja bem-vindo ao meu espaço.
-                        Aqui você poderá conhecer um pouco
-                        da minha história, da minha caminhada
-                        e da minha conexão com o universo
-                        do tarot e da espiritualidade.
-                    </p>
-
-                    <p>
-                        Este espaço foi criado para acolher,
-                        compartilhar experiências e oferecer
-                        momentos de reflexão.
-                    </p>
-
-                    <p>
-                        Entre, fique à vontade e permita-se
-                        ouvir um pouco mais a sua própria intuição.
-                    </p>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =========================
-             GALERIA
-        ========================== -->
-
-        <section class="gallery section" id="galeria">
-
-            <div class="container">
-
-                <div class="section-heading">
-
-                    <p class="section-kicker">
-                        ✦ GALERIA ✦
-                    </p>
-
-                    <h2>
-                        Momentos TarotLuz
-                    </h2>
-
-                    <p>
-                        Em breve, este espaço receberá
-                        fotos e momentos especiais.
-                    </p>
-
-                </div>
-
-
-                <div class="gallery-grid">
-
-                    <div class="gallery-item">
-                        <span>✦</span>
-                    </div>
-
-                    <div class="gallery-item">
-                        <span>☾</span>
-                    </div>
-
-                    <div class="gallery-item">
-                        <span>☆</span>
-                    </div>
-
-                    <div class="gallery-item">
-                        <span>☼</span>
-                    </div>
-
-                    <div class="gallery-item">
-                        <span>✧</span>
-                    </div>
-
-                    <div class="gallery-item">
-                        <span>✦</span>
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =========================
-             CONTATO
-        ========================== -->
-
-        <section class="contact section" id="contato">
-
-            <div class="container narrow">
-
-                <p class="section-kicker">
-                    ✦ CONTATO ✦
-                </p>
-
-                <h2>
-                    Vamos conversar?
-                </h2>
-
-                <p>
-                    Entre em contato para saber mais
-                    e conhecer o trabalho TarotLuz.
-                </p>
-
-                <a
-                    href="mailto:contato@tarotluz.com"
-                    class="button button-primary"
-                >
-                    Entrar em contato
-                </a>
-
-            </div>
-
-        </section>
-
-    </main>
-
-
-    <!-- =========================
-         FOOTER
-    ========================== -->
-
-    <footer class="site-footer">
-
-        <div class="container footer-inner">
-
-            <div>
-
-                <a href="#inicio" class="logo">
-                    Tarot<span>Luz</span>
-                </a>
-
-                <p>
-                    Luz, intuição e reflexão.
-                </p>
-
-            </div>
-
-
-            <div class="footer-links">
-
-                <a href="#inicio">Início</a>
-                <a href="#tarot">Tarot</a>
-                <a href="#sobre">Sobre</a>
-                <a href="#contato">Contato</a>
-
-            </div>
-
+        <div class="hero-art">
+          <img src="assets/hero-card.svg" alt="Ilustração mística" />
         </div>
+      </div>
+    </section>
 
-
-        <div class="footer-bottom">
-
-            <p>
-                © <span id="year"></span> TarotLuz.
-                Todos os direitos reservados.
-            </p>
-
+    <section id="sobre" class="section-dark">
+      <div class="container">
+        <h2>Sobre</h2>
+        <div class="grid-2">
+          <div>
+            <p><strong>Tarot Luz</strong> nasceu da união entre intuição, sabedoria ancestral e um propósito: trazer clareza para quem busca caminhos mais luminosos. Realizamos leituras de tarot, orientações espirituais e rituais de proteção e prosperidade, sempre com ética, respeito e sigilo.</p>
+            <h3>Bio</h3>
+            <p>Eu sou Luz, taróloga e praticante de rituais há mais de 8 anos. Minha prática combina símbolos do tarot, limpeza energética e rituais personalizados para apoiar transformação pessoal. Trabalho com empatia e foco em resultados práticos e espirituais.</p>
+            <p>Contato rápido: <a href="tel:+5581997071859">+55 81 99707‑1859</a></p>
+          </div>
+          <div class="about-cards">
+            <div class="card">
+              <h4>Ética</h4>
+              <p>Sigilo e respeito em todas as consultas.</p>
+            </div>
+            <div class="card">
+              <h4>Atendimento</h4>
+              <p>Online por videochamada ou presencial (quando disponível).</p>
+            </div>
+            <div class="card">
+              <h4>Resultados</h4>
+              <p>Orientações práticas, mapas de ação e rituais quando indicado.</p>
+            </div>
+          </div>
         </div>
+      </div>
+    </section>
 
-    </footer>
+    <section id="leituras" class="section">
+      <div class="container">
+        <h2>Leituras</h2>
+        <div class="grid-3">
+          <article class="service">
+            <h3>Leitura Completa</h3>
+            <p>Uma leitura aprofundada (90 min) com mapa de vida, áreas: amor, carreira e processo espiritual.</p>
+            <p class="price">R$ 250,00</p>
+            <a class="btn" href="shop.html#produto-leitura-completa">Ver</a>
+          </article>
+          <article class="service">
+            <h3>Tiragem Rápida</h3>
+            <p>Consulta objetiva (20–30 min) para questões pontuais e decisões.</p>
+            <p class="price">R$ 80,00</p>
+            <a class="btn" href="shop.html#produto-tiragem-rapida">Ver</a>
+          </article>
+          <article class="service">
+            <h3>Consulta de Propósito</h3>
+            <p>Foco no propósito de vida e direcionamento espiritual (60 min).</p>
+            <p class="price">R$ 160,00</p>
+            <a class="btn" href="shop.html#produto-proposito">Ver</a>
+          </article>
+        </div>
+      </div>
+    </section>
 
+    <section id="magias" class="section-dark">
+      <div class="container">
+        <h2>Magias & Rituais</h2>
+        <p>Rituais de proteção, limpeza e prosperidade realizados com intenção e materiais selecionados. Cada ritual é personalizado conforme as necessidades e circunstâncias do consulente.</p>
+        <div class="grid-2">
+          <div class="card">
+            <h4>Ritual de Proteção</h4>
+            <p>Limpeza energética e ancoragem de proteção pessoal.</p>
+          </div>
+          <div class="card">
+            <h4>Ritual de Prosperidade</h4>
+            <p>Ativa oportunidades e remove bloqueios financeiros.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <script src="js/main.js"></script>
+    <section id="agendar" class="section">
+      <div class="container">
+        <h2>Agendar</h2>
+        <p>Agende sua leitura preenchendo o formulário abaixo. Após envio entraremos em contato para confirmar data e forma de atendimento.</p>
+        <form id="form-agenda" action="https://formspree.io/f/your-form-id" method="POST" class="form-grid">
+          <label>
+            Nome
+            <input type="text" name="name" required />
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" required />
+          </label>
+          <label>
+            Telefone
+            <input type="tel" name="phone" value="+55 81 99707-1859" />
+          </label>
+          <label>
+            Serviço desejado
+            <select name="service">
+              <option>Leitura Completa</option>
+              <option>Tiragem Rápida</option>
+              <option>Consulta de Propósito</option>
+              <option>Ritual</option>
+            </select>
+          </label>
+          <label class="full">
+            Mensagem / Disponibilidade
+            <textarea name="message" rows="4"></textarea>
+          </label>
+          <!-- Honeypot anti-spam -->
+          <input type="text" name="_gotcha" style="display:none" />
+          <button class="btn btn-primary" type="submit">Enviar pedido</button>
+        </form>
+      </div>
+    </section>
 
+    <section id="contato" class="section-dark footer-up">
+      <div class="container">
+        <h2>Contato</h2>
+        <p>Telefone/WhatsApp: <a href="tel:+5581997071859">+55 81 99707‑1859</a></p>
+        <p>Instagram: <a href="https://instagram.com/Tarotluzoficial" target="_blank">@Tarotluzoficial</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Tarot Luz — Todos os direitos reservados.</p>
+      <p class="small">Pagamentos: PayPal • Mercado Pago</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
 </body>
 </html>
